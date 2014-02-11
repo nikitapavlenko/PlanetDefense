@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Planets defence</title>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="js/createjs/events/Event.js"></script>
+    <script type="text/javascript" src="js/createjs/events/EventDispatcher.js"></script>
+    <script type="text/javascript" src="js/createjs/utils/IndexOf.js"></script>
+
+    <script type="text/javascript" src="js/easeljs/utils/UID.js"></script>
+    <script type="text/javascript" src="js/easeljs/utils/Ticker.js"></script>
+    <script type="text/javascript" src="js/easeljs/geom/Matrix2D.js"></script>
+    <script type="text/javascript" src="js/easeljs/geom/Point.js"></script>
+    <script type="text/javascript" src="js/easeljs/geom/Rectangle.js"></script>
+    <script type="text/javascript" src="js/easeljs/display/Shadow.js"></script>
+    <script type="text/javascript" src="js/easeljs/display/SpriteSheet.js"></script>
+    <script type="text/javascript" src="js/easeljs/display/Graphics.js"></script>
+    <script type="text/javascript" src="js/easeljs/display/DisplayObject.js"></script>
+    <script type="text/javascript" src="js/easeljs/display/Container.js"></script>
+    <script type="text/javascript" src="js/easeljs/display/Stage.js"></script>
+    <script type="text/javascript" src="js/easeljs/display/Bitmap.js"></script>
+    <script type="text/javascript" src="js/easeljs/display/Sprite.js"></script>
+    <script type="text/javascript" src="js/easeljs/display/BitmapAnimation.js"></script>
+    <script type="text/javascript" src="js/easeljs/display/BitmapText.js"></script>
+    <script type="text/javascript" src="js/easeljs/display/Shape.js"></script>
+    <script type="text/javascript" src="js/easeljs/display/Text.js"></script>
+    <script type="text/javascript" src="js/easeljs/display/DOMElement.js"></script>
+    <script type="text/javascript" src="js/easeljs/events/MouseEvent.js"></script>
+    <script type="text/javascript" src="js/easeljs/filters/Filter.js"></script>
+    <script type="text/javascript" src="js/easeljs/ui/ButtonHelper.js"></script>
+    <script type="text/javascript" src="js/easeljs/ui/Touch.js"></script>
+    <script type="text/javascript" src="js/easeljs/utils/SpriteSheetUtils.js"></script>
+    <script type="text/javascript" src="js/easeljs/utils/SpriteSheetBuilder.js"></script>
+    <script type="text/javascript" src="js/tweenjs/Tween.js"></script>
+    <script type="text/javascript" src="js/tweenjs/Ease.js"></script>
+
+    <script type="text/javascript" src="js/soundjs-NEXT.min.js"></script>
+    <script type="text/javascript" src="js/preloadjs-NEXT.min.js"></script>
+
+    <script type="text/javascript" src="js/game-screen.js"></script>
+    <script type="text/javascript" src="js/menu-screen.js"></script>
+    <script type="text/javascript" src="js/loading-screen.js"></script>
+    <script type="text/javascript" src="js/loader.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script  type="text/javascript" src="js/screen-manager.js"></script>
+    <script  type="text/javascript" src="js/sound-manager.js"></script>
+    <script type="text/javascript" src="js/ndgmr.Collision.js"></script>
+    <style>
+        @font-face {
+            font-family: Bangers; /* Гарнитура шрифта */
+            src: url("Bangers.ttf"); /* Путь к файлу со шрифтом */
+        }
+        @font-face {
+            font-family: Clip; /* Гарнитура шрифта */
+            src: url("Clip.ttf"); /* Путь к файлу со шрифтом */
+        }
+        canvas {
+            padding-left: 0;
+            padding-right: 0;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+        body{
+            background: black;
+        }
+    </style>
+</head>
+<body onload="game.initialize();">
+
+    <div id="loader" class="loader"></div>
+
+    <div class="GameWindow">
+        <canvas id="Canvas" width="960" height="536"></canvas>
+
+    </div>
+
+</body>
+
+</html>
